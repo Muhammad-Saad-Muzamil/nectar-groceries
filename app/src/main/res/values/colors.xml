@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#53B175</color>
+    <color name="purple_500">#53B175</color>
+    <color name="purple_700">#53B175</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="whitebback">#C4C4C4</color>
+    <color name="primaryGreen">#53B175</color>
+    <color name="primaryText">#212121</color>
+    <color name="background">#F5F5F5</color>
+    <color name="accent">#FF9800</color>
+    <color name="nectar_green">#53B175</color>
+    <color name="white1">#FCFCFC</color>
+    <color name="blue">#5383EC</color>
+    <color name="blue1">#4A66AC</color>
+    <color name="colorFruits">#E8F5E9</color>
+    <color name="colorOil">#FFF3E0</color>
+    <color name="colorMeat">#FFEBEE</color>
+    <color name="colorBakery">#FBE9E7</color>
+    <color name="colorDairy">#E3F2FD</color>
+    <color name="colorBeverages">#E0F7FA</color>
+    <color name="silver">#E2E2E2</color>
+    <color name="checkoutcolor">#F2F3F2</color>
+    <color name="textblack">#181725</color>
+    <color name="grey">#7C7C7C</color>
+
+
+</resources>

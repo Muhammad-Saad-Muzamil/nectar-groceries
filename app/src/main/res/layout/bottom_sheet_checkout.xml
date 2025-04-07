@@ -1,0 +1,181 @@
+ <LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/checkoutcolor"
+    android:padding="16dp">
+
+    <!-- Header with Close Button -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/CheckoutTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Checkout"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingBottom="20dp"/>
+
+        <ImageView
+            android:id="@+id/closeButton"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/ic_cross"
+            android:contentDescription="Close"
+            android:layout_gravity="end"/>
+    </LinearLayout>
+
+    <!-- Delivery Method -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingVertical="8dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Delivery"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/DeliveryMethodTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Method"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"/>
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/ic_arrow_back"
+            android:contentDescription="Proceed"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="0dp"/>
+    </LinearLayout>
+
+    <!-- Payment Method -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingVertical="8dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Payment"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/PaymentMethodTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose Payment"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"/>
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/ic_arrow_back"
+            android:contentDescription="Proceed"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="0dp"/>
+    </LinearLayout>
+
+    <!-- Promo Code Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingVertical="8dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Promo Code"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/PromoCodeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pick Discount"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"/>
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/ic_arrow_back"
+            android:contentDescription="Proceed"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="0dp"/>
+    </LinearLayout>
+
+    <!-- Total Cost -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingVertical="8dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Total Cost"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/TotalCostTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$0.00"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="normal"/>
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/ic_arrow_back"
+            android:contentDescription="Proceed"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="0dp"/>
+    </LinearLayout>
+
+    <!-- Terms & Conditions -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="By placing the order, you agree to our Terms and Conditions"
+        android:textSize="12sp"
+        android:textColor="@android:color/darker_gray"
+        android:paddingBottom="10dp"
+        android:paddingTop="18dp"
+        android:gravity="center"/>
+
+    <!-- Place Order Button -->
+    <Button
+        android:id="@+id/PlaceOrder"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Place Order"
+        android:backgroundTint="@color/primaryGreen"
+        android:textColor="@android:color/white"/>
+</LinearLayout>

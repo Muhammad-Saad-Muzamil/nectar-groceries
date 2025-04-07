@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/screenbackground"
+    tools:context=".ui.auth.VerificationActivity">
+
+    <!-- Back Button -->
+    <ImageButton
+        android:id="@+id/goBackButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/ic_backarrow"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Go Back"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tvEnterOTP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your 4-digit code"
+        android:textColor="@android:color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textAlignment="viewStart"
+        android:gravity="start"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/goBackButton"/>
+
+    <!-- Mobile Number Text -->
+    <TextView
+        android:id="@+id/tvMobileNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Code"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="16sp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvEnterOTP"/>
+
+    <!-- OTP Code Input (PinView) -->
+    <com.chaos.view.PinView
+        android:id="@+id/pinView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:inputType="number"
+        android:maxLength="4"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:cursorVisible="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:importantForAccessibility="yes"
+        app:itemCount="4"
+        app:itemHeight="50dp"
+        app:itemWidth="50dp"
+        app:itemSpacing="10dp"
+        app:lineColor="@color/black"
+        app:lineWidth="2dp"
+        app:viewType="line"
+        app:layout_constraintStart_toStartOf="@id/tvEnterOTP"
+        app:layout_constraintEnd_toEndOf="@id/tvEnterOTP"
+        app:layout_constraintTop_toBottomOf="@id/tvMobileNumber"/>
+
+    <!-- Resend Code -->
+    <TextView
+        android:id="@+id/tvResendCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resend Code"
+        android:textColor="@color/primaryGreen"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/tvEnterOTP"
+        />
+
+    <!-- Floating Action Button (Next) -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="@color/primaryGreen"
+        android:src="@drawable/ic_arrow_forward"
+        app:maxImageSize="28dp"
+        app:fabCustomSize="60dp"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
