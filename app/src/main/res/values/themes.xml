@@ -14,6 +14,7 @@
         <item name="colorPrimaryVariant">@color/nectar_green</item>
         <item name="colorAccent">@color/white</item>
         <item name="android:navigationBarColor">@color/white</item>
+        <item name="android:button">@color/primaryGreen</item>
         <item name="android:windowFullscreen">true</item>
     </style>
     <!-- Base application theme. -->

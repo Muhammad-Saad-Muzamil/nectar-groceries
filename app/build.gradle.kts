@@ -58,6 +58,7 @@ dependencies {
     implementation("com.hbb20:ccp:2.5.0")
     implementation ("io.github.chaosleung:pinview:1.4.4")
     implementation ("com.google.android.gms:play-services-auth:21.0.0")
+    implementation ("com.google.firebase:firebase-firestore-ktx:24.7.0")
 
 
 

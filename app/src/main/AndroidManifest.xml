@@ -42,7 +42,7 @@
         <activity
             android:name=".ui.splash.OnboardingActivity"
             android:exported="false"
-            android:theme="@style/Theme.Nectar"
+            android:theme="@style/Theme.Nectar.Splash"
             tools:ignore="MissingClass" />
         <activity
             android:name=".ui.splash.SplashActivity"
@@ -56,7 +56,9 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="false" />
+            android:exported="false" android:theme="@style/Theme.Nectar" />
+
+
     </application>
 
 </manifest>

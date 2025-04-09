@@ -13,7 +13,7 @@ import com.example.nectar.ui.auth.SigninActivity
 class OnboardingActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
+
         setContentView(R.layout.activity_onboarding)
 
         // Find the button by its ID
@@ -23,6 +23,7 @@ class OnboardingActivity : AppCompatActivity() {
         getStartedButton.setOnClickListener {
             // Navigate to the SignupActivity
             val intent = Intent(this, SigninActivity::class.java) // Use the correct class name
+            intent.flags =Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
             startActivity(intent)
             finish() // Close the current activity (optional)
         }

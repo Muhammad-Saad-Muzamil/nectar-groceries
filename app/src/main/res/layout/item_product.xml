@@ -38,6 +38,17 @@
             android:textStyle="bold"
             android:layout_centerHorizontal="false" />
 
+        <!-- Product Description -->
+        <TextView
+            android:id="@+id/productDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/productName"
+            android:layout_marginTop="2dp"
+            android:text="7pcs, Priceg"
+            android:textSize="12sp"
+            android:layout_centerHorizontal="false" />
+
         <!-- Product Price -->
         <TextView
             android:id="@+id/productPrice"
@@ -50,34 +61,23 @@
             android:textSize="15sp"
             android:layout_centerHorizontal="false" />
 
-        <!-- Product Description -->
-        <TextView
-            android:id="@+id/productDescription"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/productName"
-            android:layout_marginTop="2dp"
-            android:text="7pcs, Priceg"
-            android:textSize="12sp"
-            android:layout_centerHorizontal="false" />
-
-        <!-- Add to Cart Button -->
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
+        <!-- Add to Cart Button (Small and Round) -->
+        <Button
             android:id="@+id/addToCartButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
             android:layout_marginEnd="4dp"
             android:layout_marginBottom="4dp"
-            android:backgroundTint="@color/primaryGreen"
-            android:contentDescription="Add to Cart"
-            android:src="@drawable/ic_add"
-
-            app:elevation="0dp"
-            app:fabSize="mini"
-            app:rippleColor="@color/white"
-            app:tint="@color/white" />
+            android:background="@drawable/round_button"
+            android:backgroundTint="@null"
+            android:padding="0dp"
+            android:gravity="center"
+            android:text="+"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
 
     </RelativeLayout>
