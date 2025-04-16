@@ -1,6 +1,4 @@
-// File: app/src/main/java/com/example/nectar/adapter/OptionAdapter.kt
-package com.example.nectar.adapter
-
+// OptionAdapter.kt
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -8,7 +6,8 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.nectar.R
-import com.example.nectar.model.OptionItem
+
+data class OptionItem(val iconResId: Int, val title: String)
 
 class OptionsAdapter(
     private val items: List<OptionItem>,
@@ -17,7 +16,7 @@ class OptionsAdapter(
 
     inner class OptionViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         private val icon: ImageView = itemView.findViewById(R.id.option_icon)
-        private val title: TextView = itemView.findViewById(R.id.option_text)
+        private val title: TextView = itemView.findViewById(R.id.option_text) // Changed to option_text
 
         fun bind(item: OptionItem) {
             icon.setImageResource(item.iconResId)
@@ -28,7 +27,7 @@ class OptionsAdapter(
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): OptionViewHolder {
         val view = LayoutInflater.from(parent.context)
-            .inflate(R.layout.item_option, parent, false)
+            .inflate(R.layout.item_profile, parent, false)
         return OptionViewHolder(view)
     }
 

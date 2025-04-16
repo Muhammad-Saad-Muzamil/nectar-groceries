@@ -1,16 +1,14 @@
 package com.example.nectar
-
-
 import CartFragment
 import ExploreFragment
-import HomeFragment
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import com.example.nectar.ui.auth.AccountFragment
+import com.example.nectar.ui.account.AccountFragment
 
 
 import com.example.nectar.ui.favorites.FavoriteFragment
+import com.example.nectar.ui.home.HomeFragment
 
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.firebase.FirebaseApp

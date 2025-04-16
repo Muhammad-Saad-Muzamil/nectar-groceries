@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.example.nectar.R
 import com.example.nectar.model.Product
 
@@ -15,7 +16,7 @@ class ProductAdapter(private var productList: List<Product>) : RecyclerView.Adap
         val productImage: ImageView = view.findViewById(R.id.productImage)
         val productName: TextView = view.findViewById(R.id.productName)
         val productPrice: TextView = view.findViewById(R.id.productPrice)
-        val productQuantity: TextView = view.findViewById(R.id.productDescription)
+        val productDescription: TextView = view.findViewById(R.id.productDescription)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ProductViewHolder {
@@ -25,17 +26,23 @@ class ProductAdapter(private var productList: List<Product>) : RecyclerView.Adap
 
     override fun onBindViewHolder(holder: ProductViewHolder, position: Int) {
         val product = productList[position]
+
         holder.productName.text = product.name
         holder.productPrice.text = product.price
-        holder.productQuantity.text = product.quantity
-        holder.productImage.setImageResource(product.imageResId)
+        holder.productDescription.text = product.description
+
+        // Load image from URL using Glide
+        Glide.with(holder.itemView.context)
+            .load(product.image) // image is a URL now
+//            .placeholder(R.drawable.placeholder_image) // optional placeholder
+//            .error(R.drawable.error_image) // optional error fallback
+            .into(holder.productImage)
     }
 
     override fun getItemCount(): Int {
         return productList.size
     }
 
-    // Update list dynamically
     fun updateList(newList: List<Product>) {
         productList = newList
         notifyDataSetChanged()

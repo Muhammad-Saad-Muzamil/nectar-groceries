@@ -58,7 +58,7 @@ class CartItemAdapter(
 
 
         // Remove item when clicked
-        holder.removeItem.setOnClickListener {
+         holder.removeItem.setOnClickListener {
             cartItems.removeAt(position)
             notifyDataSetChanged()
             updateTotal()

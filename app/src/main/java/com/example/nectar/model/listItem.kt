@@ -6,7 +6,3 @@ data class ProfileItem(
     val email: String
 ) : ListItem()
 
-data class OptionItem(
-    val iconResId: Int,
-    val text: String
-) : ListItem()
